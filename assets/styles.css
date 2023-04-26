@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(215, 207, 207);
+}
+
+.login {
+   max-width: 400px;
+   margin: 0 auto;
+   background-color: white;
+   padding: 50px;
+   border-radius: 5px;
+}
+
+.signup {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.alert {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
