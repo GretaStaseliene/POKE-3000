@@ -1,13 +1,7 @@
 <?php
+include('functions.php');
 
 if (!empty($_POST)) {
-
-    function validate($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
 
     $user_name = validate($_POST['user_name']);
     $first_name = validate($_POST['first_name']);

@@ -10,7 +10,7 @@ body{
    border-radius: 5px;
 }
 
-.signup {
+.signup, .edit {
     max-width: 500px;
     margin: 0 auto;
     background-color: white;
@@ -22,4 +22,17 @@ body{
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+.users {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.users h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
