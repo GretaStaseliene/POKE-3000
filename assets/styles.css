@@ -24,15 +24,16 @@ body{
     margin-bottom: 10px;
 }
 
-.users {
+.users, .pokes {
     background-color: white;
     padding: 30px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
 }
 
-.users h2 {
+.users h2, .pokes h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+

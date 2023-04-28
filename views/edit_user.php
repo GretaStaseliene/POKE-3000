@@ -13,7 +13,7 @@ if(isset($_POST['edit_first_name']) || isset($_POST['edit_last_name']) || isset(
     $edited_last_name = validate($_POST['edit_last_name']);
     $edited_email = validate($_POST['edit_email']);
 
-    if ($db->query("UPDATE `users` SET `user_name` = '$edited_user_name', `first_name` = '$edited_first_name', `last_name` = '$edited_last_name', `email` = '$edited_email' WHERE `id` = $currentUser")) {
+    if ($db->query("UPDATE `users` SET `first_name` = '$edited_first_name', `last_name` = '$edited_last_name', `email` = '$edited_email' WHERE `id` = $currentUser")) {
         header('Location: ?page=users');
     }
 }
@@ -31,7 +31,7 @@ if(isset($_POST['edit_first_name']) || isset($_POST['edit_last_name']) || isset(
 
                 <div class="mb-3">
                     <label>Prisijungimo vardas</label>
-                    <input type="text" name="edit_user_name" class="form-control" value="<?= $user['user_name']; ?>" readonly />
+                    <input type="text" class="form-control" value="<?= $user['user_name']; ?>" readonly />
                 </div>
                 <div class="mb-3">
                     <label>Vardas</label>

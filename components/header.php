@@ -12,7 +12,8 @@
 
     <?php if(isset($_SESSION['id'])) { ?>
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fa-solid fa-hand-point-right fa-xl"></i></a></li>
+            <li class="nav-item"><a href="?page=pokes" class="nav-link text-white"><i class="fa-solid fa-hand-point-right fa-xl"></i></a></li>
+            <li class="nav-item"><a href="?page=users" class="nav-link text-white"><i class="fa-solid fa-users fa-xl"></i></a></li>
             <li class="nav-item"><a href="?page=edit_user" class="nav-link text-white"><i class="fa-solid fa-user-large"></i></a></li>
             <li class="nav-item"><a href="?page=logout" class="nav-link text-white"><i class="fa-solid fa-right-from-bracket fa-xl"></i></a></li>
         </ul>

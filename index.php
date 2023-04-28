@@ -1,8 +1,8 @@
 <?php
 
-include('config.php');
-
 session_start();
+
+include('config.php');
 
 // try {
 //     $db = new mysqli('localhost', 'root', '', 'poke-3000');
@@ -42,7 +42,10 @@ session_start();
                     include('views/login.php');
                     break;
                 case 'users':
-                    include('users.php');
+                    include('views/users.php');
+                    break;
+                case 'pokes':
+                    include('views/pokes.php');
                     break;
                 case 'edit_user':
                     include('views/edit_user.php');
