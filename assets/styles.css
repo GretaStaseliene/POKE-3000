@@ -37,3 +37,11 @@ body{
     margin-bottom: 20px;
 }
 
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+.list-style {
+    list-style: none;
+}

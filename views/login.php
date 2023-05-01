@@ -26,7 +26,7 @@ if (!empty($_POST)) {
                 $_SESSION['id'] = $row['id'];
 
                 header('Location: ?page=users');
-                exit;
+                exit();
             }
         }
     }

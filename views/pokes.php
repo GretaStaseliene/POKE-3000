@@ -26,11 +26,42 @@ $pokes = $result->fetch_all(MYSQLI_ASSOC);
         <tbody>
             <?php foreach($pokes as $poke) : ?>
                 <tr>
-                    <td><?= $poke['date']; ?></td>
+                    <td><?= date("Y-m-d", strtotime($poke['date'])); ?></td>
                     <td><?= $poke['poke_from']; ?></td>
                     <td><?= $poke['poke_to']; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
-</div>
+
+
+
+
+<script>
+    // $(document).ready(function(){
+    //     load_data(1);
+    // });
+
+    // function load_data(page) {
+    //     $.ajax({
+    //         url: 'pokes_data.php',
+    //         method: 'POST',
+    //         data: {page: page},
+    //         success: function(data){
+    //             $('#data').html(data);
+    //         }
+    //     });
+    // }
+
+    // $(document).on('click', '.pagination-link', function() {
+    //     var page = $(this).data('page');
+    //     $.ajax({
+    //         url: 'pokes_data.php',
+    //         type: 'POST',
+    //         data: {page: page},
+    //         success: function(){
+    //             $('#data-table tbody').html(data);
+    //         }
+    //     });
+    // });
+</script>
